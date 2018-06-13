@@ -2,7 +2,7 @@
  * @Author: Rosen
  * @Date:   2016-11-20 13:19:28
  * @Last Modified by:   Administrator
- * @Last Modified time: 2018-06-13 20:44:59
+ * @Last Modified time: 2018-06-13 23:16:00
  * 知识点：css单独打包、全局jquery引用、各种loader
  */
 
@@ -16,6 +16,7 @@ var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
 
 // webpack config
 var config = {
+    mode: 'production',
     entry: {
         'app': ['./src/index.jsx']
     },
