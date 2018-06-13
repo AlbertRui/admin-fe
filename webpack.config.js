@@ -2,7 +2,7 @@
  * @Author: Rosen
  * @Date:   2016-11-20 13:19:28
  * @Last Modified by:   Administrator
- * @Last Modified time: 2018-06-05 23:51:45
+ * @Last Modified time: 2018-06-13 20:44:59
  * 知识点：css单独打包、全局jquery引用、各种loader
  */
 
@@ -41,7 +41,8 @@ var config = {
     },
     module: {
         // noParse: [],
-        loaders: [{
+        // loaders: [{
+        rules: [{
             test: /\.css$/,
             loader: ExtractTextPlugin.extract({
                 use: 'css-loader',
@@ -77,10 +78,10 @@ var config = {
     },
     plugins: [
         // 提出公共部分 
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendors',
-            filename: 'js/base.js'
-        }),
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: 'vendors',
+        //     filename: 'js/base.js'
+        // }),
         // 单独处理css
         new ExtractTextPlugin('css/[name].css'),
         // html 加载
@@ -98,7 +99,21 @@ var config = {
                 collapseWhitespace: false
             }
         }),
-    ]
+    ],
+    optimization: {
+        runtimeChunk: {
+            name: "manifest"
+        },
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    chunks: "all"
+                }
+            }
+        }
+    }
 };
 
 // 开发环境下，使用devServer热加载
