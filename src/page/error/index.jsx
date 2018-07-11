@@ -1,9 +1,17 @@
 /*
+<<<<<<< HEAD
 * @Author: Rosen
 * @Date:   2017-02-23 18:16:59
 * @Last Modified by:   Rosen
 * @Last Modified time: 2017-02-24 10:17:27
 */
+=======
+ * @Author: Rosen
+ * @Date:   2017-02-23 18:16:59
+ * @Last Modified by:   Rosen
+ * @Last Modified time: 2017-02-24 10:17:27
+ */
+>>>>>>> 9b63b1bca6de15b8614e2242163a2226cb7c6f27
 
 'use strict';
 import React        from 'react';

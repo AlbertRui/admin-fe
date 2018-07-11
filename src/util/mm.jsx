@@ -9,10 +9,17 @@
 
 const conf = {
     // online
+<<<<<<< HEAD
     // serverHost: 'http://admin.ubaby.rzhang.xin'
     // dev
     serverHost: '',
     imageHost: 'http://img.ubaby.rzhang.xin/',
+=======
+    // serverHost: 'http://admin.happymmall.com'
+    // dev
+    serverHost: '',
+    imageHost: 'http://img.happymmall.com/',
+>>>>>>> 9b63b1bca6de15b8614e2242163a2226cb7c6f27
 }
 
 class MMUtil{
