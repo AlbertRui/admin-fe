@@ -1,17 +1,9 @@
 /*
-<<<<<<< HEAD
 * @Author: Rosen
 * @Date:   2017-02-28 14:53:59
 * @Last Modified by:   Rosen
 * @Last Modified time: 2017-04-13 15:33:03
 */
-=======
- * @Author: Rosen
- * @Date:   2017-02-28 14:53:59
- * @Last Modified by:   Rosen
- * @Last Modified time: 2017-04-13 15:33:03
- */
->>>>>>> 9b63b1bca6de15b8614e2242163a2226cb7c6f27
 
 
 'use strict';
