@@ -1,8 +1,8 @@
 /*
 * @Author: Rosen
 * @Date:   2016-11-20 13:19:28
-* @Last Modified by:   Rosen
-* @Last Modified time: 2017-03-21 18:13:41
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-07-12 21:31:37
 * 知识点：css单独打包、全局jquery引用、各种loader
 */
 
@@ -26,7 +26,7 @@ var config = {
     // path && publickPath
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : WEBPACK_ENV === 'online' ? '//s.happymmall.com/mmall_admin_fe/dist/' : '/dist/',
+        publicPath  : WEBPACK_ENV === 'online' ? '//s.ubaby.rzhang.xin/admin-fe/dist/' : '/dist/',
         filename    : 'js/[name].js'
     },
     resolve: {
