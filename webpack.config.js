@@ -2,7 +2,7 @@
 * @Author: Rosen
 * @Date:   2016-11-20 13:19:28
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-07-12 21:31:37
+* @Last Modified time: 2018-07-21 18:51:55
 * 知识点：css单独打包、全局jquery引用、各种loader
 */
 
@@ -81,7 +81,7 @@ var config = {
         // html 加载
         new HtmlWebpackPlugin({
             filename        : 'view/index.html',
-            title           : 'MMall 后台管理系统',
+            title           : 'Ubaby 后台管理系统',
             template        : './src/index.html',
             favicon         : './favicon.ico',
             inject          : true,

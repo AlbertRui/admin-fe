@@ -32,7 +32,7 @@ if [ -d "./dist" ];
     then 
     echo -e "==============dest backup=========="
 	rm -rf $DEST_PATH/admin-fe/dist.bak
-    mv $DEST_PATH/ubaby-fe/dist $DEST_PATH/admin-fe/dist.bak
+    mv $DEST_PATH/admin-fe/dist $DEST_PATH/admin-fe/dist.bak
 
     #copy
     echo -e "==============dest copy=========="
