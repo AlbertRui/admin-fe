@@ -28,7 +28,7 @@ const FileUploader = React.createClass({
         /*set properties*/
         const options={
             baseUrl         : _mm.getServerUrl('/manage/product/upload.do'),
-            fileFieldName   : 'upload_file',
+            fileFieldName   : 'uploadFile',
             accept          : 'image/gif,image/jpeg,image/jpg,image/png',
             chooseAndUpload : true,
             uploadSuccess   : this.props.onSuccess,
