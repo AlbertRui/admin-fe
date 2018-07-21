@@ -30,7 +30,7 @@ const ProductDetail = React.createClass({
             secondCategoryId    : '',
             name                : '',
             subtitle            : '',
-            subImages           : [],
+            subImage           : [],
             price               : '',
             stock               : '',
             detail              : '',
@@ -97,7 +97,7 @@ const ProductDetail = React.createClass({
             categoryId          : product.categoryId,
             name                : product.name,
             subtitle            : product.subtitle,
-            subImages           : product.subImages.split(','),
+            subImage           : product.subImage.split(','),
             detail              : product.detail,
             price               : product.price,
             stock               : product.stock,
@@ -190,7 +190,7 @@ const ProductDetail = React.createClass({
                                 <label htmlFor="inputEmail3" className="col-md-2 control-label">商品图片</label>
                                 <div className="img-con col-md-10">
                                     {
-                                        this.state.subImages.length ? this.state.subImages.map((image, index) => {
+                                        this.state.subImage.length ? this.state.subImage.map((image, index) => {
                                             return (
                                                 <div className="sub-img" key={index}>
                                                     <img className="img" src={_mm.getImageUrl(image)}/>
